@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
     
     // Send a response back to the client
     //socket.emit('serverMessage', { message: 'Hello from server!' });
-    socket.emit('serverMessage', { message: 'data' });
+    socket.emit('serverMessage', { message: data });
   });
 
   // Handle disconnection
