@@ -18,10 +18,11 @@ io.on('connection', (socket) => {
   
   // Listen for a message from the client
   socket.on('clientMessage', (data) => {
-    console.log('Message from client:', data);
+    console.log('Message from user:', data);
     
     // Send a response back to the client
-    socket.emit('serverMessage', { message: 'Hello from server!' });
+    //socket.emit('serverMessage', { message: 'Hello from server!' });
+    socket.emit('serverMessage', { message: 'data' });
   });
 
   // Handle disconnection
